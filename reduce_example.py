@@ -17,6 +17,11 @@ list of numbers
 
 100 + 13 = 113 result final 
 """
-sum_numbers = lambda x, y : x + y 
-result = reduce(sum_numbers, [47, 11, 42, 13])
-print(result)
+def lambda_test(my_list):
+    sum_numbers = lambda x, y : x + y 
+    return reduce(sum_numbers, my_list)
+
+if __name__ == "__main__":
+    list_number = [47, 11, 42, 13]
+    result = lambda_test(list_number)
+    print(result)
