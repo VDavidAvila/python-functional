@@ -32,4 +32,4 @@ if __name__ == "__main__":
     result = lambda_test(sum_numbers,list_number)
     print(result)
     
-    maximum_number(list_number)
+    print(maximum_number(list_number))
